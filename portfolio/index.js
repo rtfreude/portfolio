@@ -6,15 +6,15 @@ import { Provider } from 'react-redux';
 
 //import createHistory from 'history/createBrowserHistory'
 import { Router, Route, browserHistory } from 'react-router';
-import { firebaseApp } from './firebase';
-import { logUser } from './actions';
-import reducer from './reducers';
+import { firebaseApp } from './src/firebase';
+import { logUser } from './src/actions';
+import reducer from './src/reducers';
 
 
-import App from './components/App';
-import Signin from './components/Signin';
-import SignUp from './components/SignUp';
-import Landing from './components/Landing';
+import App from './src/components/App';
+import Signin from './src/components/Signin';
+import SignUp from './src/components/SignUp';
+import Landing from './src/components/Landing';
 
 
 const store = createStore(reducer)
